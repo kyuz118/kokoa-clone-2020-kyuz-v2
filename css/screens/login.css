@@ -1,0 +1,67 @@
+.welcome-header {
+  margin-top: 90px; /* 위 마진 90픽셀 */
+  margin-bottom: 90px; /* 아래 마진 90픽셀 */
+  text-align: center;
+  display: flex;
+  flex-direction: column; /*flex 정렬을 세로로 */
+  align-items: center; /* 센터 정렬 */
+}
+
+.fa-door-open {
+  /* fontawesome에서 불러온 이미지 */
+  margin-bottom: 20px;
+}
+
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.welcome-header__text {
+  width: 60%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px; /*위 아래 마진 0, 좌우 마진 30픽셀 */
+}
+
+.login-form__input {
+  padding: 15px 0px; /*위 아래 패딩 15픽셀 */
+  margin-bottom: 25px; /*아래 마진 25픽셀 */
+  border: none; /*입력창 선 없애기 */
+  font-size: 18px;
+}
+
+.login-form__input:not([type="submit"]) {
+  /*입력 타입이 버튼(submit)이 아닌 id(login-form) 입력창에 아래와 같이 css 적용 */
+  border-bottom: 1px solid lightgray; /*아래쪽 선만 1픽셀 연회색 */
+  transition: border-color 0.3s ease-in-out; /*선 색으로 0.3초 트랜지션 */
+}
+
+.login-form__input::placeholder {
+  /*입력창 힌트 색 변경 */
+  color: lightgray;
+}
+
+.login-form__input:focus {
+  /*입력창에 포커스가 왔을 때 variable.css에서 정의한 --yellow 색으로 선 색깔 변경*/
+  border-color: var(--yellow);
+}
+
+.login-form__input[type="submit"] {
+  /*버튼 배경색을 variable.css에서 정의한 --yellow 색으로 정하기 */
+  background-color: var(--yellow);
+  cursor: pointer; /*마우스가 올라갔을 때 커서 모양 pointer로 정하기*/
+  font-size: 15px;
+  border-radius: 5px; /* 버튼 모서리 둥글게 */
+}
+
+.login-form__a {
+  text-align: center;
+  text-decoration: none; /*텍스트 효과 없음 */
+  color: inherit; /* login-form 으로부터 색 상속 */
+  font-size: 13px;
+  font-weight: 500;
+}

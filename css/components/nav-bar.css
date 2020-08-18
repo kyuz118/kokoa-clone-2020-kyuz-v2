@@ -1,0 +1,44 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 20px 50px;
+  box-sizing: border-box; /* padding을 주어도 box 사이즈를 늘리지 않도록 함 */
+  border-top: 1px solid rgba(134, 133, 133, 0.3); /*(Red, Green, Blue, Alpha)*/
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav_link {
+  position: relative; /*notification 위치를 잡아주기 위해 position 부모 설정 */
+  color: #2e363e;
+}
+.nav__notification {
+  background-color: tomato;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px; /* notification 모양을 원형으로 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 300;
+  position: absolute; /* position을 relative에 종속 설정 */
+  left: 18px;
+  bottom: 18px;
+}
+
+.nav__dot {
+  background-color: tomato;
+  width: 8px;
+  height: 8px;
+  border-radius: 15px; /* notification 모양을 원형으로 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* position을 relative에 종속 설정 */
+  left: 30px;
+  bottom: 30px;
+}

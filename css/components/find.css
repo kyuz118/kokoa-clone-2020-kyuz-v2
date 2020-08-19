@@ -1,0 +1,16 @@
+.find__btn {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--hotizontal-space);
+}
+
+.find__btn-intext {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  margin-left: 2px;
+}
+
+.find__btn-text {
+  text-align: center;
+}

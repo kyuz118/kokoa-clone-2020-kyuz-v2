@@ -4,7 +4,7 @@
     <link href="css/style.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends -- Kokoa Clone</title>
+    <title>Find -- Kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -23,55 +23,56 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Find</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
         <span><i class="fas fa-cog fa-lg"></i></span>
       </div>
     </header>
 
-    <a id="friends-display-link">
-      <i class="fas fa-info-circle"></i>
-      Friends' Names Display
-      <i class="fas fa-chevron-right fa-xs"></i>
-    </a>
-
-    <main class="friends-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            class="user-component__avatar user-component__avatar--xl"
-            src="images/avatar1.png"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Kyuz</h4>
-            <!-- <h6 class="user-component__subtitle">Clothes for rainy days</h6> -->
+    <main>
+      <div class="find__btn">
+        <div class="find__btn-all">
+          <div class="find__btn-pic">
+            <i class="fas fa-qrcode fa-5x"></i>
           </div>
-        </div>
-
-        <div class="friends-screen__channel">
-          <div class="friends-screen__channel-header">
-            <span>Channel</span>
-            <i class="fas fa-chevron-up fa-xs"></i>
-          </div>
-        </div>
-
-        <div class="user-component__column">
-          <img
-            class="user-component__avatar user-component__avatar--sm"
-            src="images/avatar3.png"
-          />
-          <div class="user-component_a">
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
+          <div class="find__btn-text">
+            <div class="find__btn-intext">
+              <span>QR Code</span>
             </div>
+          </div>
+        </div>
 
-            <div class="user-component__s">
-              <span>2</span>
-              <i class="fas fa-chevron-right fa-xs"></i>
+        <div class="find__btn-all">
+          <div class="find__btn-pic">
+            <i class="far fa-address-book fa-5x"></i>
+          </div>
+          <div class="find__btn-text">
+            <div class="find__btn-intext">
+              <span>Add by</span>
+            </div>
+            <p>Contacts</p>
+          </div>
+        </div>
+
+        <div class="find__btn-all">
+          <div class="find__btn-pic">
+            <i class="fas fa-passport fa-5x"></i>
+          </div>
+          <div class="find__btn-text">
+            <div class="find__btn-intext">
+              <span>Add by ID</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="find__btn-all">
+          <div class="find__btn-pic">
+            <i class="far fa-paper-plane fa-5x"></i>
+          </div>
+          <div class="find__btn-text">
+            <div class="find__btn-intext">
+              <span>Invite</span>
             </div>
           </div>
         </div>
@@ -83,7 +84,7 @@
       <ul class="nav__list">
         <li class="nav_btn">
           <a class="nav_link" href="Friends.html"
-            ><i class="fas fa-user fa-2x"></i
+            ><i class="far fa-user fa-2x"></i
           ></a>
         </li>
         <li class="nav_btn">

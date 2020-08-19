@@ -1,3 +1,4 @@
 :root {
-  --yellow: #fae100; /* 색 값을 --yellow라는 속성으로 지정 */
+  --yellow: #fae100; /* 색 값을 --yellow라는 변수에 저장 */
+  --hotizontal-space: 25px;
 }

@@ -1,0 +1,64 @@
+.friends-screen {
+  padding: 0px var(--hotizontal-space);
+}
+.user-component {
+  justify-content: space-between;
+}
+.user-component__column:first-child {
+  display: flex;
+  align-items: center;
+}
+.user-component__column {
+  display: flex;
+  align-items: center;
+}
+.user-component_a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.user-component__s {
+  color: lightgray;
+}
+
+.user-component__avatar {
+  /*프로필 사진 중간 사이즈 CSS*/
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+.user-component__avatar--xl {
+  /*프로필 사진 큰 사이즈 CSS*/
+  width: 80px;
+  height: 80px;
+}
+.user-component__avatar--sm {
+  /*프로필 사진 작은 사이즈 CSS*/
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+.user-component__title--not-bold {
+  font-weight: 500;
+}
+.user-component__title {
+  font-size: 22px;
+}
+.user-component__subtitle {
+  margin-top: 5px;
+  padding-top: 2px;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.friends-screen__channel {
+  margin-top: 20px;
+  padding: 10px 0px 20px 0px;
+  border-top: 1px solid rgb(240, 240, 240);
+}
+
+.friends-screen__channel-header {
+  color: lightgray;
+  display: flex;
+  justify-content: space-between;
+}

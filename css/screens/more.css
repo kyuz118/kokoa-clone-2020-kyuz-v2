@@ -1,0 +1,25 @@
+.more-screen .icon-row {
+  margin-top: 25px;
+}
+
+.more-screen .icon-row2 {
+  display: flex;
+}
+
+.icon-null {
+  height: 30px;
+}
+
+.icon-row__null {
+  width: 50px;
+}
+
+.suggestions {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
+  border-top: var(--main-border);
+  margin-top: var(--hotizontal-space);
+  padding-top: var(--hotizontal-space);
+  margin-bottom: var(--hotizontal-space);
+}

@@ -4,6 +4,9 @@
 .user-component {
   justify-content: space-between;
 }
+.user-null {
+  height: 10px;
+}
 .user-component__column:first-child {
   display: flex;
   align-items: center;
@@ -11,6 +14,13 @@
 .user-component__column {
   display: flex;
   align-items: center;
+}
+.user-compnent__phone {
+  display: flex;
+  align-items: center;
+}
+.user-component__exclamtion {
+  padding-left: 10px;
 }
 .user-component_a {
   width: 100%;
@@ -54,11 +64,15 @@
 .friends-screen__channel {
   margin-top: 20px;
   padding: 10px 0px 20px 0px;
-  border-top: 1px solid rgb(240, 240, 240);
+  border-top: var(--main-border);
 }
 
 .friends-screen__channel-header {
   color: lightgray;
   display: flex;
   justify-content: space-between;
+}
+.user-component__exclamtion {
+  margin-top: 5px;
+  padding-top: 2px;
 }

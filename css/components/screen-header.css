@@ -14,3 +14,23 @@
 .screen-header__icons span {
   margin-left: 25px;
 }
+
+.screen__dot {
+  background-color: tomato;
+  width: 8px;
+  height: 8px;
+  border-radius: 15px; /* notification 모양을 원형으로 */
+  justify-content: center;
+  align-items: center;
+  margin-left: 95px;
+}
+
+.screen__dot2 {
+  background-color: tomato;
+  width: 8px;
+  height: 8px;
+  border-radius: 15px; /* notification 모양을 원형으로 */
+  justify-content: center;
+  align-items: center;
+  margin-left: 145px;
+}

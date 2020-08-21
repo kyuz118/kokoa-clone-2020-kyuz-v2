@@ -8,15 +8,21 @@
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
 @import "components/user-component.css";
-@import "components/chats.css";
-@import "components/find.css";
+@import "components/icon-row.css";
 
 /* screens import */
 @import "screens/login.css";
 @import "screens/friends.css";
+@import "screens/chats.css";
+@import "screens/find.css";
+@import "screens/more.css";
 
 body {
   font-family: "Noto Sans KR", sans-serif; /* Noto sans kr 폰트를 기본으로 하고 없으면 snas-serif로 */
   font-weight: 700; /* import한 폰트의 두께 설정 임포트할 때 불러온 속성 중 해당 두께가 있어야 함. */
   color: #2e363e;
+}
+.main-screen {
+  padding: 0px var(--hotizontal-space);
+  z-index: 0;
 }

@@ -4,22 +4,40 @@
 
 .more-screen .icon-row2 {
   display: flex;
+  justify-content: space-between;
 }
 
 .icon-null {
   height: 30px;
 }
 
-.icon-row__null {
-  width: 50px;
-}
-
 .suggestions {
-  display: flex;
-  justify-content: space-between;
+  display: block;
   opacity: 0.8;
   border-top: var(--main-border);
   margin-top: var(--hotizontal-space);
   padding-top: var(--hotizontal-space);
   margin-bottom: var(--hotizontal-space);
+}
+
+.suggestions__zone {
+  margin-top: var(--hotizontal-space);
+  display: flex;
+  justify-content: space-between;
+}
+
+.suggestions__icon2 {
+  visibility: hidden;
+}
+
+.suggestions__icon__img {
+  display: block;
+}
+
+.suggestions__icon__img-box {
+  margin-left: 15px;
+  margin-bottom: 7px;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
 }

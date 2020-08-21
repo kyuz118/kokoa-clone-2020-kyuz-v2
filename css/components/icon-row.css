@@ -8,11 +8,23 @@
   flex-direction: column;
   align-items: center;
 }
-
+.icon-row__icon2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .icon-row__icon i {
   font-size: 35px;
 }
-
+.icon-row__icon2 {
+  visibility: hidden;
+}
+.icon-row__icon2 i {
+  font-size: 35px;
+}
 .icon-row__icon span {
+  margin-top: 18px;
+}
+.icon-row__icon2 span {
   margin-top: 18px;
 }

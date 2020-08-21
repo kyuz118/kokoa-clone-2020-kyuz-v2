@@ -1,0 +1,49 @@
+.setting-header {
+  display: flex;
+  justify-content: space-between;
+}
+.setting {
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.setting-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+.setting-top:last-child {
+  border-bottom: none;
+}
+.setting-top__a {
+  font-size: 20px;
+  display: flex;
+}
+.setting-top__icon {
+  width: 60px;
+}
+.setting-top__text1 {
+  display: flex;
+  align-items: center;
+}
+.setting-top__text2 {
+  display: flex;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+}
+
+.setting__notification {
+  font-size: 12px;
+  display: flex;
+  background-color: tomato;
+  width: 20px;
+  height: 20px;
+  border-radius: 15px; /* notification 모양을 원형으로 */
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 300;
+  margin-left: 10px;
+}

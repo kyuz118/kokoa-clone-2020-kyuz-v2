@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="css/style.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Screen2 -- Kokoa Clone</title>
+  </head>
+
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Sercive</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <sapn>11%</sapn>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <span
+        ><a href="chats.html"><i class="fas fa-chevron-left fa-lg"></i></a
+      ></span>
+
+      <h1 class="screen-header__title">SonChangSu</h1>
+      <div class="chat-header__icon">
+        <span
+          ><a href="find.html"><i class="fas fa-search fa-lg"></i></a
+        ></span>
+
+        <a href="#"><i class="fas fa-bars fa-lg"></i></a>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, June 30, 2020</div>
+
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__buble">형님 잘 지내십니까~^^</span>
+            <span class="message__tmie">14:23</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row">
+        <img src="images/avatar4.png"">
+        <div class="message-row__content">
+          <span class="message__author">SonChangSu</span>
+          <div class="message__info">
+            <span class="message__buble">안녕하세요 ^^</span>
+            <span class="message__tmie">14:24</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__buble">소주 한잔 하시죠!</span>
+            <span class="message__tmie">14:25</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row">
+        <img src="images/avatar4.png"">
+        <div class="message-row__content">
+          <span class="message__author">SonChangSu</span>
+          <div class="message__info">
+            <span class="message__buble">반사.. ^^</span>
+            <span class="message__tmie">14:27</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-2x"></i>
+      </div>
+
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message here" />
+        <i class="far fa-smile-beam fa-2x"></i>
+        <button>
+          <i class="fas fa-arrow-circle-up fa-2x"></i>
+        </button>
+      </div>
+    </form>
+    <script
+      src="https://kit.fontawesome.com/eae733fc2c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

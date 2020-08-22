@@ -28,3 +28,7 @@
 .icon-row__icon2 span {
   margin-top: 18px;
 }
+
+.chat-header__icon span {
+  padding-right: 20px;
+}

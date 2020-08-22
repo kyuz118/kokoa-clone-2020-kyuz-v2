@@ -17,10 +17,9 @@
 #chat-screen .screen-header {
   z-index: 1; /* 레이어 깊이 */
 }
-.main-screen {
-  margin-top: 150px;
-}
+
 .main-chat {
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -10,3 +10,29 @@
 #friends-display-link i {
   color: rgba(0, 0, 0, 0.3);
 }
+
+@keyframes hideSplashScreen {
+  /* 애니메이션을 위한 키프레임 생성 알파값 100 -> 0 */
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden; /*elements 숨기기 (자리는 차지하며 숨김) */
+  }
+}
+
+#splash-screen {
+  z-index: 999;
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh; /* 화면 높이의 100% */
+  width: 100vw; /* 화면 너비의 100% */
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 122px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards; /* forwards 애니메이션이 끝나면 끝난 효과에서 고정 */
+  animation-delay: 0.7s; /* 애니메이션 실행을 일정시간 멈춤 */
+}

@@ -1,0 +1,19 @@
+#no-mobile {
+  position: absolute;
+  z-index: 9999;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  top: 0;
+}
+
+@media screen and (max-width: 870px) {
+  /*화면 넓이가 870px 보다 작으면 디스플레이 숨기기*/
+  #no-mobile {
+    display: none;
+  }
+}

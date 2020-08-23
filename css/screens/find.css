@@ -1,3 +1,6 @@
+.find-screen {
+  margin: 25px;
+}
 .recommended-friends {
   margin: 25px 0px;
   padding: 25px;
@@ -102,6 +105,23 @@
   margin-left: 3px;
 }
 
-.find-screen {
-  margin: 10px;
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.2);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+.open-post__heart-count:hover i {
+  will-change: transform;
+  /*브라우저에 해당 elements에 변화가 있을 것으로 랜더링 힌트를 줌*/
+  /*그래픽 카드를 이용하여 애니메이션을 가속화 함. 조금 더 부드러운 애니메이션을 보여줌 */
+  animation: heartBeat 0.5s linear infinite;
 }

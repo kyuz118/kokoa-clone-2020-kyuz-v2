@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 11000vh;
+  height: 500vh;
 }
 
 #chat-screen .screen-header,
@@ -18,12 +18,35 @@
   z-index: 1; /* 레이어 깊이 */
 }
 
+@keyframes fadeIn1 {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn2 {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chat {
   margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .chat__timestamp {
   color: white;
   font-weight: 200;
@@ -36,8 +59,10 @@
 
 .message-row {
   width: 100%;
+  opacity: 0;
   display: flex;
   margin-bottom: 25px;
+  animation: fadeIn1 0.3s ease-in-out forwards;
 }
 
 .message-row img {
@@ -73,6 +98,8 @@
 
 .message-row--own {
   justify-content: flex-end;
+  opacity: 0;
+  animation: fadeIn2 0.3s ease-in-out forwards;
 }
 
 .message-row--own .message__buble {
@@ -109,6 +136,7 @@
   box-sizing: border-box;
   border: var(--main-boder);
   border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -125,6 +153,7 @@
   font-size: 18px;
   border: var(--main-border);
   border-radius: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply__column:last-child > i,
@@ -157,4 +186,25 @@
 }
 .reply_column button i {
   opacity: 1;
+}
+
+.reply .replay__column:first-child,
+.reply .fa-smile-beam,
+.reply button {
+  transition: all 0.3s ease-in-out;
+}
+
+.reply:focus-within .replay__column:first-child,  /*reply  내부에 어떤 elements가 focus 되어 있다면 */
+.reply:focus-within .fa-smile-beam,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 90vw;
+  transform: translateX(-10%) translateY(-80px);
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
 }
